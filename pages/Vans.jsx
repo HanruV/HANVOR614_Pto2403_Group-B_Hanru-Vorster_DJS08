@@ -23,5 +23,9 @@ export default function Vans() {
     </div>
   ));
 
-  return <>{vanElements}</>;
+  return (
+    <div className="van-list-container">
+      <div className="van-list">{vanElements}</div>
+    </div>
+  );
 }
