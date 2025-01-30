@@ -69,6 +69,8 @@ header .login-link {
 
 nav {
   display: flex;
+  gap: 2rem;
+  margin-left: 1rem;
 }
 
 a.active-link {
