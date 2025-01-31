@@ -17,18 +17,19 @@ import HostVanInfo from "../pages/Host/HostVanInfo.jsx";
 import HostVanPhotos from "../pages/Host/HostVanPhotos.jsx";
 import HostVanPricing from "../pages/Host/HostVanPricing.jsx";
 import NotFound from "../pages/NotFound.jsx";
+import Login from "../pages/Login.jsx";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Main Layout */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} />
-          {/* Host Layout */}
+          <Route path="login" element={<Login />} />
+
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
