@@ -17,7 +17,8 @@ export default function Login() {
     setStatus("submitting");
     loginUser(loginFormData)
       .then((data) => {
-        setStatus("idle");
+        console.log(data);
+        setError(null);
       })
       .catch((err) => {
         setError(err);
